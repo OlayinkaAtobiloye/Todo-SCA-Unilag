@@ -1,0 +1,59 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="style.css" type=text/css rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Lora&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+</head>
+
+<body>
+    <header class="header">#todo</header>
+    <nav>
+        <ul class="taskCategories">
+            <li class="taskCategory active" id="allCategory">
+                All
+            </li>
+            <li class="taskCategory" id="activeCategory">
+                Active
+            </li>
+            <li class="taskCategory" id="completedCategory">
+                Completed
+            </li>
+        </ul>
+    </nav>
+    <main>
+    <form class="addTask" name="newTask">
+        <input placeholder="add details" class="inputTask" name="task" />
+        <button type="submit" class="submitTask">
+            Add
+        </button>
+    </form>
+    <!-- <section class="allTasks">
+        <div key={index}>
+            <input type="checkbox"  id={index} />
+            <p class="task">{task}</p>
+        </div>
+    </section> -->
+        <section class="activeTasks">
+        </section>
+        <section class="completedDiv">
+            <!-- <button class="delete" >
+                <i class="material-icons">delete</i>delete all
+            </button> -->
+            </div>
+        </section>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>

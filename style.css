@@ -1,0 +1,132 @@
+main {
+    margin-left: 20vw;
+    margin-right: 20vw;
+  }
+  
+  .header {
+    text-align: center;
+    font-family: Raleway;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: -0.045em;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 32px;
+    color: #333333;
+  }
+  
+  .taskCategories {
+    display: flex;
+    justify-content: space-evenly;
+    color: #333333;
+    border-bottom: 1px solid #bdbdbd;
+    margin-left: 20vw;
+    margin-right: 20vw;
+  }
+  
+  .taskCategory {
+    list-style: none;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0em;
+    padding-bottom: 15px;
+    cursor: pointer;
+    padding: 10px;
+  }
+
+  .delete{
+    position: absolute;
+    right: 0px;
+width: 124px;
+height: 40px;
+background: #EB5757;
+border-radius: 4px;
+color: #ffffff;
+border-style: none;
+display: flex;
+vertical-align: middle;
+align-items: center;
+cursor: pointer;
+margin-top: 16px;
+}
+
+.completedDiv{
+    position: relative;
+}
+
+.material-icons{
+    cursor: pointer;
+}
+  
+  .active {
+    border-bottom: 4px solid #2f80ed;
+    border-radius: 0px 0px 4px 4px;
+  }
+
+  .addTask {
+    display: flex;
+    justify-content: space-evenly;
+    justify-content: space-around;
+  }
+  
+  .inputTask {
+    height: 32px;
+    width: 400px;
+    border-radius: 12px;
+    padding: 6px;
+  }
+  
+  .submitTask {
+    height: 32px;
+    width: 109px;
+    left: 915px;
+    top: 184px;
+    border-radius: 12px;
+    background: #2f80ed;
+    color: #ffffff;
+    box-shadow: 0px 2px 6px rgba(127, 177, 243, 0.4);
+    border-radius: 12px;
+    border-style: none;
+  }
+  
+  .task {
+    display: inline-block;
+    margin-left: 12px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000000;
+  }
+  
+  .completedTask {
+    text-decoration: line-through;
+  }
+  
+  @media (max-width: 768px) {
+    main {
+      margin-left: 2vw;
+      margin-right: 6vw;
+    }
+  
+    .taskCategories {
+      margin-left: 2vw;
+      margin-right: 6vw;
+    }
+  
+    .inputTask {
+      width: 250px;
+    }
+  
+    .delete{
+      width: 100px;
+    }
+  }
